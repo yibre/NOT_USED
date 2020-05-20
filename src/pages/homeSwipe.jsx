@@ -1,5 +1,5 @@
 import "./libraries/flickity.pkgd";
-import "./ItemsCarousel.css";
+// import "./ItemsCarousel.css";
 
 
 /*
