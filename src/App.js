@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 
 import MainPage from "./pages/main";
+import Villigers from "./pages/villigers";
+import Items from "./pages/items";
+import Diylist from "./pages/diylist";
 
 
 class App extends Component {
@@ -16,6 +19,10 @@ class App extends Component {
     return <Router>
       <Switch>
         <Route exact path = "/" component= {MainPage}/>
+        <Route exact path = "/villigers" component= {Villigers}/>
+        <Route exact path = "/items" component= {Items}/>
+        <Route exact path = "/items/clothes" component= {Clothes}/>
+        <Route exact path = "/diylist" component= {Diylist}/>
         <Redirect to = "/404"/>
       </Switch>
     </Router>
