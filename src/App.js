@@ -9,8 +9,10 @@ import {
 } from "react-router-dom";
 
 import MainPage from "./pages/main";
+import Login from "./pages/login";
 import Villigers from "./pages/villigers";
 import Items from "./pages/items";
+import Clothes from "./pages/itemClothes";
 import Diylist from "./pages/diylist";
 
 
@@ -19,6 +21,7 @@ class App extends Component {
     return <Router>
       <Switch>
         <Route exact path = "/" component= {MainPage}/>
+        <Route exact path = "/login" component = {Login}/>
         <Route exact path = "/villigers" component= {Villigers}/>
         <Route exact path = "/items" component= {Items}/>
         <Route exact path = "/items/clothes" component= {Clothes}/>
